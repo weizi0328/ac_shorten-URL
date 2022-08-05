@@ -1,28 +1,9 @@
-function sample(array) {
-  const index = Math.floor(Math.random() * array.length)
-  return array[index]
-}
+const random = (length = 5) => {
+  let chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
 
-
-function generateUrl() {
-  const items = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
-
-  // dummy data of req.body
-
-  // create a collection to store things user picked up
-  let collection = items.split('')
-
-  // remove things user do not need
-  // 這邊沒有
-
-  // start generating URL
-  let url = ''
-  for (let i = 0; i < 5; i++) {
-    url += sample(collection)
+  let str = ''
+  for (let i = o; i < length; i++) {
+    str += chars.charAt(Math.floor(Math.random() * chars.length))
   }
-
-  // return the generated URL
-  return url
+  return str
 }
-
-generateUrl()
