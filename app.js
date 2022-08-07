@@ -1,27 +1,14 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
-const bodyParser = require('body-parser')
+// const bodyParser = require('body-parser')
 
 const Url = require('./models/url')
 const shortenUrl = require('./utils/shortenUrl')
+require('./config/mongoose')
 
 const app = express()
 const port = 3000
 
-const mongoose = require('mongoose')
-
-// Mongoose connection
-mongoose.connect(process.env.MONGODB_URI)
-
-const db = mongoose.connection
-db.on('error', error => {
-  console(error)
-  console.log('mongodb error!')
-})
-
-db.once('open', () => {
-  console.log('mongodb connected!')
-})
 
 // template engine
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
