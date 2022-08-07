@@ -60,4 +60,4 @@ IF YOU LIKE THIS WEBSITE, PLEASE DONATE MY BY PAYPAL: ankewang26@gmail.com
 
 
 ## Screenshot
-![Home page](https://github.com/weizi0328/ac_restaurant_list_crud/blob/main/restaurant_CRUD_A7.jpg?raw=true)
+![Home page](https://github.com/weizi0328/ac_shorten-URL/blob/main/public/image/URL_shortener_homepage.png?raw=true)
